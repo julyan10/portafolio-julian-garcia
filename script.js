@@ -3,11 +3,11 @@ const storageKey = "julian-portfolio-projects";
 const starterProjects = [
   {
     id: "dashboard-bi",
-    title: "Dashboards ejecutivos y seguimiento de KPIs",
+    title: "Dashboard ejecutivo de seguimiento y análisis",
     category: "Power BI",
     description:
-      "Modelos de reportería en Power BI, Tableau, Looker Studio y Qlik Sense para seguimiento operativo, comercial y gerencial.",
-    media: "",
+      "GIF interactivo con pantallazos de un tablero BI para visualizar indicadores, tendencias, filtros y análisis ejecutivo orientado a la toma de decisiones.",
+    media: "https://github.com/julyan10/portafolio-julian-garcia/blob/main/Pantallazos.gif?raw=true",
     link: "",
   },
   {
