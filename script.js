@@ -43,6 +43,12 @@ const grid = document.querySelector("[data-project-grid]");
 const template = document.querySelector("[data-project-template]");
 const dialog = document.querySelector("[data-project-dialog]");
 const form = document.querySelector("[data-project-form]");
+const mediaDialog = document.querySelector("[data-media-dialog]");
+const mediaImage = document.querySelector("[data-media-image]");
+const mediaTitle = document.querySelector("[data-media-title]");
+const mediaCategory = document.querySelector("[data-media-category]");
+const mediaDescription = document.querySelector("[data-media-description]");
+const mediaLink = document.querySelector("[data-media-link]");
 const filterButtons = Array.from(document.querySelectorAll("[data-filter]"));
 let activeFilter = "all";
 
@@ -80,6 +86,17 @@ function renderProjects() {
       image.src = project.media;
       image.alt = `Vista previa de ${project.title}`;
       media.appendChild(image);
+      media.classList.add("has-media");
+      media.setAttribute("role", "button");
+      media.setAttribute("tabindex", "0");
+      media.setAttribute("aria-label", `Ampliar ${project.title}`);
+      media.addEventListener("click", () => openMediaViewer(project));
+      media.addEventListener("keydown", (event) => {
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          openMediaViewer(project);
+        }
+      });
     } else {
       media.textContent = "Añade aquí un GIF, screenshot o demo";
     }
@@ -105,8 +122,32 @@ function renderProjects() {
   });
 }
 
+function openMediaViewer(project) {
+  mediaImage.src = project.media;
+  mediaImage.alt = `Vista ampliada de ${project.title}`;
+  mediaTitle.textContent = project.title;
+  mediaCategory.textContent = project.category;
+  mediaDescription.textContent = project.description;
+
+  if (project.link) {
+    mediaLink.href = project.link;
+    mediaLink.hidden = false;
+  } else {
+    mediaLink.hidden = true;
+  }
+
+  mediaDialog.showModal();
+}
+
 document.querySelector("[data-open-form]").addEventListener("click", () => dialog.showModal());
 document.querySelector("[data-close-form]").addEventListener("click", () => dialog.close());
+document.querySelector("[data-close-media]").addEventListener("click", () => mediaDialog.close());
+
+mediaDialog.addEventListener("click", (event) => {
+  if (event.target === mediaDialog) {
+    mediaDialog.close();
+  }
+});
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();

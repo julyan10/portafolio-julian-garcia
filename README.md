@@ -24,6 +24,9 @@ También funciona en Netlify o Vercel arrastrando esta carpeta completa.
 Desde la web, usa el botón `Agregar proyecto`. Los proyectos quedan guardados en
 el navegador mediante `localStorage`.
 
+Si agregas una URL de GIF, imagen o demo visual, la tarjeta permitirá ampliar ese
+contenido en un visor grande al hacer clic sobre la imagen.
+
 Para que los proyectos queden públicos para todos los visitantes, agrega esos
 proyectos directamente en el arreglo `starterProjects` dentro de `script.js`.
 

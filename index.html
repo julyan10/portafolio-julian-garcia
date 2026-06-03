@@ -199,7 +199,7 @@
         <div class="section-heading split">
           <div>
             <p class="eyebrow">Proyectos</p>
-          <h2>Galería interactiva para tableros, GIFs, scripts y casos de negocio.</h2>
+            <h2>Galería interactiva para tableros, GIFs, scripts y casos de negocio.</h2>
           </div>
           <button class="button secondary" type="button" data-open-form>Agregar proyecto</button>
         </div>
@@ -309,6 +309,23 @@
         </label>
         <button class="button primary" type="submit">Guardar en este navegador</button>
       </form>
+    </dialog>
+
+    <dialog class="media-dialog" data-media-dialog>
+      <div class="media-viewer">
+        <div class="media-viewer-header">
+          <div>
+            <span class="project-tag" data-media-category></span>
+            <h2 data-media-title></h2>
+          </div>
+          <button type="button" class="icon-button" data-close-media aria-label="Cerrar">×</button>
+        </div>
+        <div class="media-viewer-frame">
+          <img data-media-image alt="" />
+        </div>
+        <p data-media-description></p>
+        <a class="button primary" data-media-link target="_blank" rel="noreferrer">Abrir recurso</a>
+      </div>
     </dialog>
 
     <template data-project-template>
