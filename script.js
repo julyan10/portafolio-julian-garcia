@@ -29,6 +29,15 @@ const starterProjects = [
     link: "",
   },
   {
+    id: "digital-marketing-dashboard",
+    title: "Panel de desempeño de marketing digital",
+    category: "Power BI",
+    description:
+      "Dashboard interactivo para analizar campañas digitales por canal, tipo de campaña, conversión, inversión, funnel de email, viralidad y segmentos de audiencia por ingresos, género y rango de edad.",
+    media: "assets/Marketing.gif",
+    link: "",
+  },
+  {
     id: "ia-productividad",
     title: "IA, ML, DL y agentes inteligentes",
     category: "IA",
