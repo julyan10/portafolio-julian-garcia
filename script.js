@@ -12,10 +12,10 @@ const starterProjects = [
   },
   {
     id: "automatizacion-reportes",
-    title: "Automatización ETL y reducción de tiempos",
+    title: "Automatización ETL/ELT y reducción de tiempos",
     category: "Python",
     description:
-      "Arquitecturas ETL, scripts y flujos automatizados con Python, R, Power Platform, Azure, Fabric y JobScheduler. Logro destacado: reducción de tiempos de ejecución en 50%.",
+      "Arquitecturas ETL/ELT, scripts y flujos automatizados con Python, R, Power Platform, Azure, Fabric, Databricks y JobScheduler. Logro destacado: reducción de tiempos de ejecución en 50%.",
     media: "",
     link: "",
   },
@@ -39,10 +39,10 @@ const starterProjects = [
   },
   {
     id: "ia-productividad",
-    title: "IA, ML, DL y agentes inteligentes",
+    title: "IA, LLM/RAG y agentes inteligentes",
     category: "IA",
     description:
-      "Desarrollo e implementación de modelos de IA, analítica avanzada, web scraping y agentes inteligentes para captura, estructuración y análisis de información.",
+      "Desarrollo e implementación de modelos de IA, ML/DL, LLM/RAG, LangChain, LangGraph, web scraping y agentes inteligentes para captura, clasificación, estructuración y análisis de información.",
     media: "",
     link: "",
   },
@@ -51,7 +51,7 @@ const starterProjects = [
     title: "Big Data y ecosistemas cloud",
     category: "Operaciones",
     description:
-      "Trabajo con SQL, NoSQL, PostgreSQL, PySpark, Azure Data Factory, AWS, DWH, ERP, CRM y WMS para integrar fuentes de información y asegurar calidad de datos.",
+      "Trabajo con SQL, NoSQL, PostgreSQL, PySpark, Azure Data Factory, Fabric, Databricks, GCP, AWS, DWH, ERP, CRM, WMS y APIs para integrar fuentes y asegurar calidad de datos.",
     media: "",
     link: "",
   },
