@@ -20,6 +20,15 @@ const starterProjects = [
     link: "",
   },
   {
+    id: "amazon-sales-dashboard",
+    title: "Dashboard de ventas Amazon",
+    category: "Power BI",
+    description:
+      "Análisis interactivo de ventas, reseñas y variaciones MTD/YTD por año y categoría. El tablero permite identificar productos con mayor aporte, cambios de desempeño y comportamiento histórico para decisiones comerciales.",
+    media: "assets/Amazon.gif",
+    link: "",
+  },
+  {
     id: "ia-productividad",
     title: "IA, ML, DL y agentes inteligentes",
     category: "IA",
